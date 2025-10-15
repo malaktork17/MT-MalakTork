@@ -1,147 +1,1 @@
-<!DOCTYPE html>
-<html lang="eg">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lecture_Two|Python_course|MT_Academy</title>
-  <link rel="stylesheet" href="../files/main.css">
-  <link rel="stylesheet" href="../files/lect.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
-</head>
-
-<body>
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <a href="../index.html">
-        <h2>MT Academy</h2>
-      </a>
-      <nav>
-        <i class="fas fa-bars toggle-menu"></i>
-        <ul>
-          <li><a class="active" href="">Lecture 2</a></li>
-          <li><a href="#record">Record</a></li>
-          <li><a href="#topics">Topics</a></li>
-          <li><a href="#task">Task</a></li>
-          <li><a href="#cont">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Landing Section -->
-  <section class="landing lecture-landing">
-    <div class="overlay"></div>
-    <div class="img">
-      <img src="../IMG/python2.png" alt="Python Basics">
-    </div>
-    <div class="text">
-      <h3> Lecture 2: Input & Output & Variables </h3>
-      <p>Turn learning into energy & Turn energy into creation</p>
-    </div>
-  </section>
-
-  <!--Record-->
-  <div class="tit">
-    <h2 id="record">Input, Process & Output</h2>
-  </div>
-  <div class="container">
-    <div class="video-box">
-      <iframe src="m2.mp4" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
-
-  <!--Topics-->
-  <div class="title">
-    <h2 id="topics">Lectures </h2>
-  </div>
-  <div class="container">
-    <nav class="lesson-nav">
-      <ul>
-        <li><a href="#t1">Input & Output Overview</a></li>
-        <li><a href="#t2">Personal Card (Print Function)</a></li>
-        <li><a href="#t3">Data Types & Common Issues</a></li>
-      </ul>
-    </nav>
-
-    <!-- Topic 1 -->
-    <div class="topic" id="t1">
-      <h2 class="topic_title">الإدخال والمعالجة والإخراج</h2>
-      <p>
-        أي برنامج يقوم بثلاث خطوات رئيسية:
-      </p>
-      <ul class="python-features">
-        <li><strong>الإدخال (Input):</strong> البيانات التي يدخلها المستخدم مثل الاسم أو الرقم.</li>
-        <li><strong>المعالجة (Process):</strong> البرنامج يتعامل مع البيانات (حساب، تحقق، طباعة...).</li>
-        <li><strong>الإخراج (Output):</strong> النتائج التي تظهر للمستخدم على الشاشة.</li>
-      </ul>
-
-      <h3>أمثلة عملية من الحياة اليومية:</h3>
-      <ul class="python-features">
-        <li>تسجيل حساب Gmail: تدخل بيانات → النظام يتحقق → يظهر لك الحساب جاهز</li>
-        <li>برنامج Word: تكتب نص → المعالجة تخزن وتنسق → تظهر النتيجة على الشاشة</li>
-        <li>الآلة الحاسبة: تدخل أرقام → المعالجة تحسب → تظهر النتيجة</li>
-      </ul>
-    </div>
-
-    <!-- Topic 2 -->
-    <div class="topic" id="t2">
-      <h2 class="topic_title">كارت شخصي - تعلم دالة الطباعة</h2>
-      <p>سنقوم بإنشاء كارت شخصي مطبوع باستخدام الدالة <code>print()</code>:</p>
-
-      <pre style="background:#2d2d2d; padding:10px; border-radius:5px;"><code class="language-python">
-print("***************")
-print("اسمك: Malak")
-print("العمر: 16")
-print("الوظيفة: متدربة Python")
-print("***************")</code></pre>
-
-      <p><strong>التحدي:</strong> غيّر البيانات لتتناسب مع شخصك، لاحقًا سنطوّر الكارت لاستخدام <code>input()</code> والمتغيرات لتصبح البيانات تفاعلية.</p>
-    </div>
-
-    <!-- Topic 3 -->
-    <div class="topic" id="t3">
-      <h2 class="topic_title">أنواع البيانات والمشكلات الشائعة</h2>
-      <p>
-        عند إدخال بيانات مثل الرقم القومي، الدالة <code>input()</code> تعيد <strong>نص (string)</strong>، وليس رقم. هذا قد يسبب مشاكل إذا أردنا إجراء عمليات حسابية.
-      </p>
-
-      <h3>مثال عملي:</h3>
-      <pre style="background:#2d2d2d; padding:10px; border-radius:5px;"><code class="language-python">
-national_id = input("ادخل الرقم القومي: ")
-print("نوع البيانات التي أدخلتها:", type(national_id))</code></pre>
-
-      <p>الدرس هنا: يجب تعلم أنواع البيانات مثل <code>int</code> و <code>float</code> و <code>str</code> وكيفية التحويل بينهم إذا احتجنا.</p>
-    </div>
-  </div>
-
-  <!--Task-->
-  <div class="title">
-    <h2 id="task">Task</h2>
-  </div>
-  <div class="container">
-    <div class="task-card">
-      <h3>📝 المهمة – تطبيق عملي!</h3>
-      <ul class="python-tasks">
-        <li>اطبع كارت شخصي باسمك وعمر وظيفتك باستخدام <code>print()</code>.</li>
-        <li>جرب إدخال اسمك بواسطة <code>input()</code> وطباعته.</li>
-        <li>ادخل الرقم القومي وتحقق من نوع البيانات باستخدام <code>type()</code>.</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer id="cont">
-    <div class="footer-bottom">
-      <p>&copy; 2025 MT Academy – جميع الحقوق محفوظة</p>
-    </div>
-  </footer>
-
-</body>
-
-</html>
